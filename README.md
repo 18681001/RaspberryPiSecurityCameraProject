@@ -1,7 +1,8 @@
 # Motion and Object Detection Recording Security Camera Project Using Raspberry Pi 3
 
 ** This Page Is Imcomplete **
-Please Don't Ask I'm so busy to fix the problem both README.md and Project.
+
+Please Don't Ask Me Because, I'm so busy to fix the problem both README.md and Project.
 
 This Project is delevloped Recording the boxes' movement and surrounded Object to record the Video Using Raspberry Pi 3.
 It record videos using Pi Camera and Webcam.
