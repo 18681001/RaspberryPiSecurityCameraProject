@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define Directory to save temp.jpg
-tempdir="/home/pi/ICT/temp"
+tempdir="/home/pi/RaspberryPiSecurityCameraProject/ICT/temp"
 # Define temp.jpg the result of fswebcam
-temp="/home/pi/ICT/temp/temp.jpg"
+temp="/home/pi/RaspberryPiSecurityCameraProject/ICT/temp/temp.jpg"
 
 #https://inhwangjeong.tistory.com/m/43
 # Return time data to logging
