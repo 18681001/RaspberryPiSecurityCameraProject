@@ -2,7 +2,7 @@
 
 autostart="/etc/xdg/lxsession/LXDE-pi/autostart"
 autostart2="/etc/modules"
-startsh="@lxterminal --command=/home/pi/ICT/check/startCheck.sh"
+startsh="@lxterminal --command=/home/pi/RaspberryPiSecurityCameraProject/ICT/check/startCheck.sh"
 raspiconfig="readMeRaspiconfig.txt"
 
 
