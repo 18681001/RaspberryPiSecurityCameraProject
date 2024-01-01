@@ -46,6 +46,7 @@ git clone https://github.com/18681001/RaspberryPiSecurityCameraProject.git
 2. Please Run PLEASERUNFIRST.sh using Terminal to install and setting the auto start system.
 
 ```bash
+cd RaspberryPiSecurityCameraProject
 bash PLEASERUNFIRST.sh
 ```
 
