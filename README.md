@@ -41,7 +41,7 @@ python3 $sense | tee -a $logdir
 
 1. Please write this commend at LXTerminal 
 ```bash
-git clone
+git clone https://github.com/18681001/RaspberryPiSecurityCameraProject.git
 ```
 2. Please Run PLEASERUNFIRST.sh using Terminal to install and setting the auto start system.
 
