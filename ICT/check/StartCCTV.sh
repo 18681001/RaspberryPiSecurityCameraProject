@@ -2,7 +2,7 @@
 
 # Define Variable
 
-location="/home/pi/ICT/raspberry-pi" # python files' location
+location="/home/pi/RaspberryPiSecurityCameraProject/ICT/raspberry-pi" # python files' location
 date2=$(date '+%y-%m-%d %H:%M:%S') # Time Data for logging
 
 video1py="motiondetectrec.py" ## object detection code
