@@ -12,7 +12,7 @@
 #Upper code is for systemd auto start script You can Ignore code or if you want to use systemd use upper code
 
 # Define Variable
-shdir="/home/pi/ICT" # define script file location
+shdir="/home/pi/RaspberryPiSecurityCameraProject/ICT" # define script file location
 sense="$shdir/check/usingSense.py" # temperature and humidity check python file
 camera="$shdir/check/CameraTest.sh" # camera test script
 date=$(date '+%y-%m-%d') # return year-month-day
