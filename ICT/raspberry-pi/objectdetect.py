@@ -45,7 +45,7 @@ dirloc = '/media/your-directory-name/' + dateday
 
 if not os.path.exists(dirloc):
     print("[" + datetime.datetime.now().strftime('%y-%m-%d_%H:%M:%S') + "] Defined Directory doesn't exist at " + dirloc)
-    dirloc = '/home/pi/ICT/' + dateday #Video save location
+    dirloc = '/home/pi/RaspberryPiSecurityCameraProject/ICT/' + dateday #Video save location
     if not os.path.exists(dirloc):
       print("[" + datetime.datetime.now().strftime('%y-%m-%d_%H:%M:%S') + "] Create Default Directory at " + dirloc)
       os.makedirs(dirloc)
