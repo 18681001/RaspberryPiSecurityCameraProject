@@ -46,7 +46,7 @@ git clone https://github.com/18681001/RaspberryPiSecurityCameraProject.git
 2. Please Run PLEASERUNFIRST.sh using Terminal to install and setting the auto start system.
 
 ```bash
-cd RaspberryPiSecurityCameraProject
+cd RaspberryPiSecurityCameraProject/ICT
 bash PLEASERUNFIRST.sh
 ```
 
@@ -83,7 +83,7 @@ sudo service dphys-swapfile start # Start Swap Service
 ```
 6. If This Setting is Complete, please change script file permission.
 ```bash
-sudo chmod 755 ICT/check/startCheck.sh
+sudo chmod 755 check/startCheck.sh
 ```
    
 7. All Done. Please Reboot System. It Start Autoimatically.
