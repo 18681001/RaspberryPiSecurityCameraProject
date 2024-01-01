@@ -46,7 +46,7 @@ fourcc = cv2.VideoWriter_fourcc(*'XVID')
 # Change Default Directory thay defined directory isn't exist
 if not os.path.exists(dirloc):
     print("[" + datetime.datetime.now().strftime('%y-%m-%d_%H:%M:%S') + "] Defined Directory doesn't exist at " + dirloc)
-    dirloc = '/home/pi/ICT/' + dateday #Video save location
+    dirloc = '/home/pi/RaspberryPiSecurityCameraProject/ICT/' + dateday #Video save location
     if not os.path.exists(dirloc):
         print("[" + datetime.datetime.now().strftime('%y-%m-%d_%H:%M:%S') + "] Create Default Directory at " + dirloc)
         os.makedirs(dirloc)
@@ -125,10 +125,10 @@ if capture.isOpened():
         # Define diff_cnt to compare GrayScale Value and max_diff
         diff_cnt = cv2.countNonZero(diff)
         # if motion is detected
-        if diff_cnt > max_diff: #해당 구문 아래에 영상 저장 코드 삽입
+        if diff_cnt > max_diff: 
             datenow
-            nzero = np.nonzero(diff) # nzero: diff는 카메라 영상과 사이즈가 같으며, a, b프레임의 차이 어레이를 의미함.
-            # 사각형 프레임 생성 min min은 행 열이 가장 작은 포인트 max max는 행 열이 가장 큰 포인트 맨 뒤는 초록색 값
+            nzero = np.nonzero(diff) # nzero: diff size is same as Camera's Frame, It mean difference of frame_a and frame_b.
+            # make square frame
             cv2.rectangle(draw, (min(nzero[1]), min(nzero[0])),(max(nzero[1]), max(nzero[0])), (0, 255, 0), 2)
             # Draw "Motion Detected!!"
             cv2.putText(draw, "Motion Detected!!", (10, 90), cv2.FONT_HERSHEY_DUPLEX, 0.5, (255, 0, 0)) 
@@ -143,7 +143,7 @@ if capture.isOpened():
             
         # Video Recording
         if video_record:
-            #좌상단에 문구 삽입
+            # Add Recording Code
             cv2.putText(draw, "Start Recording...", (10, 50), cv2.FONT_HERSHEY_DUPLEX, 0.5, (0, 255, 0)) 
             out.write(draw)
             
@@ -153,7 +153,7 @@ if capture.isOpened():
             cv2.putText(draw, "Record Stopped!", (10, 50), cv2.FONT_HERSHEY_DUPLEX, 0.5, (0, 0, 255)) # Show Record Stop text
             video_record = False
 
-        ## cv2.color~쪽은 3 layser를 쓰고있는 샘플 영상중 오른쪽 형태만 보이는 영상을 의미하는듯
+        
         stacked = np.hstack((draw, cv2.cvtColor(diff, cv2.COLOR_GRAY2BGR))) 
         cv2.imshow('webcam "Press Esc to EXIT!"', draw) 
         frame_a = frame_b
