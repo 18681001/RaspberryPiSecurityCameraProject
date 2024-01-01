@@ -80,7 +80,12 @@ sudo nano /etc/dphys-swapfile
 CONF_SWAPSIZE=128 to CONF_SWAPSIZE=2048
 sudo service dphys-swapfile start # Start Swap Service
 ```
-6. If This Setting is Complete, Please Reboot System. It Start Autoimatically.
+6. If This Setting is Complete, please change script file permission.
+```bash
+sudo chmod 755 ICT/check/startCheck.sh
+```
+   
+7.Please Reboot System. It Start Autoimatically.
 
 
 ## Based Code
