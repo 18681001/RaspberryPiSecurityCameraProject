@@ -53,9 +53,9 @@ bash PLEASERUNFIRST.sh
 If you don't want using this script files. Please install software written at PLEASERUNFIRST.sh.
 
 The Requirements Opencv and TensorFlow Lite version is:
-OpenCV (opencv-python): 4.5.3.56
-TF Lite Support: 0.4.3
-TF Lite Runtime: 2.11.0
+- OpenCV (opencv-python): 4.5.3.56
+- TF Lite Support: 0.4.3
+- TF Lite Runtime: 2.11.0
 
 3. If PLEASERUNFIRST.sh is suspended, Please Set Legacy Camera Option using raspi-config
 
