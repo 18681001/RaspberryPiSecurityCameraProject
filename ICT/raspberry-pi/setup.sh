@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This Code is Same as TFLite Object Detection. You Can Replace Below Projects script File.
+# https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/raspberry_pi
+
 if [ $# -eq 0 ]; then
   DATA_DIR="./"
 else
