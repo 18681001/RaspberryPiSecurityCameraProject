@@ -85,7 +85,7 @@ sudo service dphys-swapfile start # Start Swap Service
 sudo chmod 755 ICT/check/startCheck.sh
 ```
    
-7.Please Reboot System. It Start Autoimatically.
+7. All Done. Please Reboot System. It Start Autoimatically.
 
 
 ## Based Code
