@@ -1,6 +1,6 @@
 # Motion and Object Detection Recording Security Camera Project Using Raspberry Pi 3
 
-** This Page Is Imcomplete **
+** This Page Is Incomplete **
 
 Please Don't Ask Me Because, I'm so busy to fix the problem both README.md and Project.
 
@@ -39,7 +39,7 @@ python3 $sense | tee -a $logdir
 
 ## Installation
 
-1. Please write this commend at LXTerminal 
+1. Please write this comment at LXTerminal 
 ```bash
 git clone https://github.com/18681001/RaspberryPiSecurityCameraProject.git
 ```
